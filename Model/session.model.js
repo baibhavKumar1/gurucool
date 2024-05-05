@@ -2,14 +2,14 @@ const {Schema , model} = require('mongoose');
 
 const sessionSchema = new Schema(
     {
-        "astrologer":String,
-        "user":String,
-        "startedAt":{
+        astrologer:String,
+        user:String,
+        startedAt:{
             type:Date,
             default:Date.now
         },
-        "endedAt":Date,
-        "query":String
+        endedAt:Date,
+        query:String
     },{versionKey:false}
 )
 

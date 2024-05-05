@@ -2,10 +2,13 @@ const {Schema , model} = require('mongoose');
 
 const userSchema = new Schema(
     {
-        "name":String,
-        "email":String,
-        "password":String,
-        "sessions":[String]
+        name:String,
+        email:String,
+        password:String,
+        sessions: [{
+            type: Schema.Types.ObjectId,
+            ref: 'Session'
+          }]
     },{ versionKey:false}
 )
 

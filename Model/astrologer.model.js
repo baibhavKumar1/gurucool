@@ -5,8 +5,15 @@ const astrologerSchema = new Schema(
         "name":String,
         "email":String,
         "password":String,
-        "activeSessions":[String],
-        "flow":Number,
+        "activeSessions":[{
+            type: Schema.Types.ObjectId,
+            ref: 'Session'
+          }],
+        "flow":{
+            type:Number,
+            default:5
+        },
+        "remaining":Number,
         "isBooked":{
             type:Boolean,
             default:false

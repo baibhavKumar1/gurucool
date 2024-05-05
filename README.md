@@ -211,12 +211,19 @@ A cron job is scheduled to run daily at midnight (00:00) to update the `remainin
 
 ---
 
+**Testing:**
+
+Used K6 to verify the load bearing capacity.
+
+---
+
 This documentation provides information about the Astrologer API endpoints and their usage. Make sure to handle authentication and authorization properly to secure the endpoints.
 
 
 **Flowchart showing all processes:**
 
-![Flow Chart](image.png)
+![Flow Chart](https://github.com/baibhavKumar1/gurucool/assets/109906215/c503f03e-68f2-410f-b1f7-85ccbed9e34a)
+
 
 **Logic behind setup:**
 
